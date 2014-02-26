@@ -1,0 +1,17 @@
+{
+    "name": "kujaff/doctrinebundle",
+    "license": "MIT",
+    "type": "bundle",
+    "description": "Add Doctrine fields type to SF2",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": { "kujaff\\DoctrineBundle\\": "" }
+    },
+    "target-dir": "kujaff/DoctrineBundle",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kujaff/doctrinebundle.git"
+        }
+    ]
+}
