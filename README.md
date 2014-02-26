@@ -6,9 +6,23 @@ Add fields type to Doctrine
 Installation
 ============
 
-composer :
+Composer :
 
     "kujaff/doctrinebundle": "dev-master"
+
+Add bundle to your AppKernel :
+
+    # app/config/AppKernel.php
+    class AppKernel extends Kernel
+    {
+        public function registerBundles()
+        {
+            $bundles = array(
+                // -----
+                new kujaff\DoctrineBundle\DoctrineBundle(),
+            );
+        }
+    }
 
 
 Add types you want in app/config/config.yml :
