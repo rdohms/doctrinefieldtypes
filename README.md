@@ -8,7 +8,13 @@ Installation
 
 Composer :
 
-    "kujaff/doctrinebundle": "dev-master"
+    # composer.json
+    {
+        "require": {
+            # -----
+            "kujaff/doctrinebundle": "dev-master"
+        }
+    }
 
 Add bundle to your AppKernel :
 
@@ -25,8 +31,9 @@ Add bundle to your AppKernel :
     }
 
 
-Add types you want in app/config/config.yml :
+Add types you need in your Doctrine config :
 
+    # app/config/config.yml
     doctrine:
         dbal:
             types:
