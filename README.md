@@ -57,7 +57,7 @@ Base64 field type will save a base64 encoded version of your value, and decode i
 PrimaryDateTime
 ===============
 
-PrimaryDateTime fix datetime field type, when you want to set it as primary key.
+PrimaryDateTime fix datetime field type, when you want to use it as primary key.
 
 PHP DateTime object can't be converted to string, and Doctrine needs it for all primary key in UnitOfWork.
 
