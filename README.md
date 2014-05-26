@@ -61,7 +61,7 @@ PrimaryDateTime fix datetime field type, when you want to use it as primary key.
 
 PHP DateTime object can't be converted to string, and Doctrine needs it for all primary key in UnitOfWork.
 
-So, PrimaryDateTime just extends DateTime doctrine type and DateTime PHP object, to as __toString() method and allow DateTime to be used as primary key.
+So, PrimaryDateTime just extends DateTime doctrine type and DateTime PHP object, to add __toString() method and allow DateTime to be used as primary key.
 
     # Resources/config/doctrine/MyEntity.orm.yml
     namespace\MyBundle\Entity\MyEntity:
