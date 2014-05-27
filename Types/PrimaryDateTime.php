@@ -32,8 +32,6 @@ class PrimaryDateTime extends DateTimeType
 	 */
 	public function convertToPHPValue($value, AbstractPlatform $platform)
 	{
-		d('test');
-		exit();
 		$dateTime = parent::convertToPHPValue($value, $platform);
 
 		if (!$dateTime) {
