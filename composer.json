@@ -1,5 +1,5 @@
 {
-    "name": "kujaff/doctrinebundle",
+    "name": "steevanb/doctrinebundle",
     "license": "MIT",
     "type": "bundle",
     "description": "Add Doctrine fields type to SF2",
