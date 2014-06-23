@@ -11,34 +11,36 @@ use kujaff\DoctrineBundle\Entity\PrimaryDateTime as PrimaryDateTimeEntity;
  */
 class PrimaryDateTime extends DateTimeType
 {
-	const PRIMARYDATETIME = 'primarydatetime';
+    /**
+     * Type name
+     */
+    const PRIMARYDATETIME = 'primarydatetime';
 
-	/**
-	 * Return type name
-	 *
-	 * @return type
-	 */
-	public function getName()
-	{
-		return self::PRIMARYDATETIME;
-	}
+    /**
+     * Return type name
+     *
+     * @return type
+     */
+    public function getName()
+    {
+        return self::PRIMARYDATETIME;
+    }
 
-	/**
-	 * Convert SQL field to PHP var
-	 *
-	 * @param string $value
-	 * @param AbstractPlatform $platform
-	 * @return PrimaryDateTimeEntity
-	 */
-	public function convertToPHPValue($value, AbstractPlatform $platform)
-	{
-		$dateTime = parent::convertToPHPValue($value, $platform);
+    /**
+     * Converts a value from its database representation to its PHP representation of this type
+     *
+     * @param mixed $value The value to convert
+     * @param AbstractPlatform $platform The currently used database platform
+     * @return mixed The PHP representation of the value
+     */
+    public function convertToPHPValue($value, AbstractPlatform $platform)
+    {
+        $dateTime = parent::convertToPHPValue($value, $platform);
 
-		if (!$dateTime) {
-			return $dateTime;
-		}
+        if (!$dateTime) {
+            return $dateTime;
+        }
 
-		return new PrimaryDateTimeEntity('@' . $dateTime->format('U'));
-	}
-
+        return new PrimaryDateTimeEntity('@' . $dateTime->format('U'));
+    }
 }
