@@ -1,6 +1,6 @@
 <?php
 
-namespace kujaff\DoctrineBundle\Types;
+namespace kujaff\DoctrineBundle\Type;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Types\Type;
