@@ -1,17 +1,17 @@
 {
-    "name": "kujaff/doctrinefieldtypes",
+    "name": "steevanb/doctrinefieldtypes",
     "license": "MIT",
     "type": "bundle",
     "description": "Add Doctrine field types",
     "minimum-stability": "dev",
     "autoload": {
-        "psr-0": { "kujaff\\DoctrineFieldTypes\\": "" }
+        "psr-0": { "steevanb\\DoctrineFieldTypes\\": "" }
     },
-    "target-dir": "kujaff/DoctrineFieldTypes",
+    "target-dir": "steevanb/DoctrineFieldTypes",
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/kujaff/doctrinefieldtypes.git"
+            "url": "https://github.com/steevanb/doctrinefieldtypes.git"
         }
     ]
 }
