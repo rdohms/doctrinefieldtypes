@@ -9,6 +9,9 @@ So, PrimaryDateTime just extends DateTime doctrine type and DateTime PHP object,
 
 Installation
 ------------
+
+Add primarydatetime field type to your configuration, here is an example for Syfmony2 :
+
 ```yml
 # app/config/config.yml
 doctrine:

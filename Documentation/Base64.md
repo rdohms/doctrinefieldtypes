@@ -1,5 +1,8 @@
 Installation
 ------------
+
+Add base64 field type to your configuration, here is an example for Syfmony2 :
+
 ```yml
 # app/config/config.yml
 doctrine:
