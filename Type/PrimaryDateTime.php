@@ -1,10 +1,10 @@
 <?php
 
-namespace kujaff\DoctrineBundle\Type;
+namespace steevanb\DoctrineFieldTypes\Type;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Types\DateTimeType;
-use kujaff\DoctrineBundle\Entity\PrimaryDateTime as PrimaryDateTimeEntity;
+use kujaff\DoctrineFieldTypes\Entity\PrimaryDateTime as PrimaryDateTimeEntity;
 
 /**
  * Field DateTime with __toString to be used as primary key
