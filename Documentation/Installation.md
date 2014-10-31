@@ -1,13 +1,8 @@
 Composer
 --------
 
-```json
-# composer.json
-{
-    "require": {
-        "kujaff/doctrinefieldtypes": "2.*"
-    }
-}
+```sh
+composer require kujaff/doctrinefieldtypes
 ```
 
 [Back to index](../README.md)
